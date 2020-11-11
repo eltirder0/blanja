@@ -1,0 +1,99 @@
+:root {
+	--main-color: #DB3022;
+}
+
+@font-face {
+	font-family: 'Metropolis';
+	src: url(../fonts/Metropolis-Regular.otf);
+}
+@font-face {
+	font-family: 'Metropolis Bold';
+	src: url(../fonts/Metropolis-Bold.otf);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Metropolis';
+	background-color: #FFFFFF;
+}
+
+.to-center {
+	transform: translate(50%, -50%);
+}
+
+.cs-container {
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.logo {
+	margin-top: 100px;
+	height: 50px;
+	width: 135px;
+}
+
+.logo-text {
+	color: var(--main-color);
+	font-family: 'Metropolis Bold';
+	font-size: 28px;
+	font-weight: bold;
+	position: relative;
+	top: -10px;
+}
+
+.med-text {
+	font-family: 'Metropolis Bold';
+	padding: 45px;
+	color: #222222;
+	font-size: 18px;
+	font-weight: 800;
+}
+
+.btn-type-account {
+	width: 260px;
+	height: 48px;
+	box-sizing: content-box;
+	display: inline-flex;
+}
+
+.cs-btn {
+	box-shadow: 0 0 1px #000000;
+	width: 130px;
+	height: 48px;
+	size: 14px;
+	border: 1px solid #9B9B9B;
+	color: #9B9B9B;
+}
+
+.cs-btn span {
+	font-size: 14px;
+	position: relative;
+	top: 17px;
+	
+}
+
+.btn-customer {
+	border-radius: 4px 0 0 4px;
+	border-right: none;
+}
+
+.btn-seller {
+	border-radius: 0 4px 4px 0;
+	border-left: none;
+}
+
+.type-active {
+	background-color: var(--main-color);
+	color: #FFFFFF;
+	border: 1px solid var(--main-color);
+}
+
