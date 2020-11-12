@@ -21,8 +21,16 @@ body {
 	background-color: #FFFFFF;
 }
 
+a {
+	text-decoration: none;
+}
+
 .to-center {
 	transform: translate(50%, -50%);
+}
+
+.clearfix {
+	clear: both;
 }
 
 .cs-container {
@@ -36,11 +44,10 @@ body {
 }
 
 .logo {
-	margin-top: 100px;
+	margin-top: 80px;
 	height: 50px;
 	width: 135px;
 }
-
 .logo-text {
 	color: var(--main-color);
 	font-family: 'Metropolis Bold';
@@ -66,19 +73,22 @@ body {
 }
 
 .cs-btn {
-	box-shadow: 0 0 1px #000000;
+	color: #9B9B9B;
 	width: 130px;
 	height: 48px;
-	size: 14px;
 	border: 1px solid #9B9B9B;
-	color: #9B9B9B;
+	box-shadow: 0 0 1px #525252;
+	cursor: pointer;
 }
-
-.cs-btn span {
-	font-size: 14px;
-	position: relative;
-	top: 17px;
-	
+	.cs-btn span {
+		font-size: 14px;
+		position: relative;
+		top: 17px;
+	}
+.type-active {
+	background-color: var(--main-color);
+	color: #FFFFFF;
+	border: 1px solid var(--main-color);
 }
 
 .btn-customer {
@@ -91,9 +101,110 @@ body {
 	border-left: none;
 }
 
-.type-active {
-	background-color: var(--main-color);
-	color: #FFFFFF;
-	border: 1px solid var(--main-color);
+
+section.login {
+	margin-top: 25px;
 }
 
+.cs-form {
+	width: 400px;
+	height: 48px;
+	margin-top: 15px;
+	padding-left: 20px;
+	display: block;
+	border: 1px solid #9B9B9B;
+	border-radius: 4px;
+	box-shadow: 0 0 1px #525252;
+}
+	.cs-form::placeholder {
+		color: #9B9B9B;
+	}
+	.cs-form:focus {
+		color: #222222;
+	}
+	.cs-form:not(:placeholder-shown) {
+		border: 1px solid #222222;
+		box-shadow: inset 0 0 1px 1px #222222;
+	}
+
+.forgot-pass {
+	color: var(--main-color);
+	font-size: 14px;
+	float: right;
+	padding: 25px 0;
+}
+
+.cs-btn-submit {
+	width: 422px;
+	height: 48px;
+	color: #FFFFFF;
+	background-color: var(--main-color);
+	clear: right;
+	cursor: pointer;
+	border-radius: 25px;
+}
+.cs-btn-submit span {
+	position: relative;
+	top: 15px;
+	text-transform: uppercase;
+	font-size: 14px;
+}
+
+section.register {
+	padding: 36px 0;
+	margin-bottom: 20px;
+}
+section.register a {
+	color: var(--main-color);
+}
+
+@media (max-width: 576px) {
+	.med-text {
+		padding: 30px;
+		font-size: 12px;
+	}
+	.btn-type-account {
+		width: 200px;
+		height: 32px;
+		box-sizing: content-box;
+		display: inline-flex;
+	}
+	.cs-btn {
+		width: 100px;
+		height: 32px;
+		cursor: pointer;
+	}
+		.cs-btn span {
+			font-size: 10px;
+			position: relative;
+			top: 6px;
+		}
+	.cs-form {
+		width: 200px;
+		height: 34px;
+		font-size: 12px;
+		padding-left: 10px;
+	}
+		.cs-form::placeholder {
+			font-size: 12px;
+		}
+
+	.forgot-pass {
+		font-size: 12px;
+		float: right;
+		padding: 20px 0;
+	}
+
+	.cs-btn-submit {
+		width: 212px;
+		height: 36px;
+	}
+	.cs-btn-submit span {
+		font-size: 12px;
+		top: 10px;
+	}
+
+	section.register {
+		font-size: 12px;
+	}
+}
