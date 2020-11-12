@@ -5,15 +5,15 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
 	<!-- CSS custom -->
-	<link rel="stylesheet" href="./assets/css/style.css">
+	<link rel="stylesheet" href="../../assets/css/style.css">
 </head>
 <body>
 	<div class="cs-container">
 		<div class="logo">
-			<img src="./assets/images/logo.png" alt="">
+			<img src="../../assets/images/logo.png" alt="">
 			<span class="logo-text">Blanja</span>
 		</div>
-		<p class="med-text">Please login with your account</p>
+		<p class="med-text">Please sign up with your account</p>
 		<div class="btn-type-account">
 			<div class="cs-btn-type btn-customer active-type" data-id="customer" onclick="activeButton(this)">
 				<span>Custommer</span>
@@ -23,26 +23,30 @@
 			</div>
 		</div>
 		<section id="customer" class="content-part show-section">
+			<input type="text" class="cs-form" placeholder="Name">
 			<input type="text" class="cs-form" placeholder="Email">
 			<input type="password" class="cs-form" placeholder="Password">
-			<a href="./pages/auth/reset_pass_customer.html" class="forgot-pass">Forgot Password?</a>
+			<a href="./reset_pass_customer.html" class="forgot-pass">Forgot Password?</a>
 			<div class="cs-btn-submit">
 				<span>Primary</span>
 			</div>
 		</section>
 		<section id="seller" class="content-part">
+			<input type="text" class="cs-form" placeholder="Name">
 			<input type="text" class="cs-form" placeholder="Email">
+			<input type="text" class="cs-form" placeholder="Phone number">
+			<input type="text" class="cs-form" placeholder="Store name">
 			<input type="password" class="cs-form" placeholder="Password">
-			<a href="./pages/auth/reset_pass_seller.html" class="forgot-pass">Forgot Password?</a>
+			<a href="./reset_pass_seller.html" class="forgot-pass">Forgot Password?</a>
 			<div class="cs-btn-submit">
 				<span>Primary</span>
 			</div>
 		</section>
 		<section class="redirect">
-			<p>Don't have a Tokopedia account? <a href="pages/auth/sign_up.html">Register</a></p>
+			<p>Already have a Tokopedia account? <a href="../../index.html">Login</a></p>
 		</section>
 	</div>
 
-	<script src="./app.js"></script>
+	<script src="../../app.js"></script>
 </body>
 </html>

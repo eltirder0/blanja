@@ -25,14 +25,6 @@ a {
 	text-decoration: none;
 }
 
-.to-center {
-	transform: translate(50%, -50%);
-}
-
-.clearfix {
-	clear: both;
-}
-
 .cs-container {
 	width: 100%;
 	margin: 0 auto;
@@ -65,6 +57,17 @@ a {
 	font-weight: 800;
 }
 
+.sml-text {
+	font-size: 14px;
+	color: var(--main-color);
+	margin-top: 35px;
+	margin-bottom: 10px;
+}
+
+.reset-pass {
+	margin-bottom: -40px;
+}
+
 .btn-type-account {
 	width: 260px;
 	height: 48px;
@@ -72,7 +75,7 @@ a {
 	display: inline-flex;
 }
 
-.cs-btn {
+.cs-btn-type {
 	color: #9B9B9B;
 	width: 130px;
 	height: 48px;
@@ -80,12 +83,12 @@ a {
 	box-shadow: 0 0 1px #525252;
 	cursor: pointer;
 }
-	.cs-btn span {
+	.cs-btn-type span {
 		font-size: 14px;
 		position: relative;
 		top: 17px;
 	}
-.type-active {
+.active-type {
 	background-color: var(--main-color);
 	color: #FFFFFF;
 	border: 1px solid var(--main-color);
@@ -101,9 +104,12 @@ a {
 	border-left: none;
 }
 
-
-section.login {
+.content-part {
 	margin-top: 25px;
+	display: none;
+}
+.show-section {
+	display: block;
 }
 
 .cs-form {
@@ -150,35 +156,42 @@ section.login {
 	font-size: 14px;
 }
 
-section.register {
+section.redirect {
 	padding: 36px 0;
 	margin-bottom: 20px;
 }
-section.register a {
+section.redirect a {
 	color: var(--main-color);
 }
 
 @media (max-width: 576px) {
 	.med-text {
 		padding: 30px;
+		font-size: 14px;
+	}
+
+	.sml-text {
 		font-size: 12px;
 	}
+
 	.btn-type-account {
 		width: 200px;
 		height: 32px;
 		box-sizing: content-box;
 		display: inline-flex;
 	}
-	.cs-btn {
+
+	.cs-btn-type {
 		width: 100px;
 		height: 32px;
 		cursor: pointer;
 	}
-		.cs-btn span {
+		.cs-btn-type span {
 			font-size: 10px;
 			position: relative;
 			top: 6px;
 		}
+
 	.cs-form {
 		width: 200px;
 		height: 34px;
@@ -204,7 +217,7 @@ section.register a {
 		top: 10px;
 	}
 
-	section.register {
+	section.redirect {
 		font-size: 12px;
 	}
 }
