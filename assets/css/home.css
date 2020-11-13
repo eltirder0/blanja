@@ -1,0 +1,13 @@
+@import './core.css';
+
+.navbar-brand {
+	padding: 15px 0;
+}
+.navbar-brand span {
+	color: var(--main-color);
+	font-family: 'Metropolis Bold';
+	font-size: 24px;
+	font-weight: bold;
+	position: relative;
+	top: 5px;
+}

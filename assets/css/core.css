@@ -1,0 +1,17 @@
+:root {
+	--main-color: #DB3022;
+}
+
+@font-face {
+	font-family: 'Metropolis';
+	src: url(../fonts/Metropolis-Regular.otf);
+}
+@font-face {
+	font-family: 'Metropolis Bold';
+	src: url(../fonts/Metropolis-Bold.otf);
+}
+
+body {
+	font-family: 'Metropolis';
+	background-color: #FFFFFF;
+}

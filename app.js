@@ -2,7 +2,6 @@ const activeButton = (button) => {
 	const contentPartId = button.dataset.id
 	const buttons = document.querySelectorAll(".cs-btn-type")
 	const contentPartSection = document.querySelectorAll(".content-part")
-	console.log(contentPartId)
 	// remove class active-type and show-section
 	buttons.forEach((item) => item.classList.remove("active-type"))
 	contentPartSection.forEach((item) => item.classList.remove("show-section"))
