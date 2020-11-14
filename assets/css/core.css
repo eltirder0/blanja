@@ -15,3 +15,7 @@ body {
 	font-family: 'Metropolis';
 	background-color: #FFFFFF;
 }
+
+a:hover {
+	text-decoration: none;
+}

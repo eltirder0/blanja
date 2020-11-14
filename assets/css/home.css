@@ -1,13 +1,141 @@
 @import './core.css';
 
-.navbar-brand {
-	padding: 15px 0;
+.navbar {
+	padding-top: 23px;
+	padding-bottom: 23px;
+	box-shadow: 0 -10px 30px 20px rgba(173, 173, 173, 0.25);
 }
-.navbar-brand span {
+
+span.logo-text {
 	color: var(--main-color);
 	font-family: 'Metropolis Bold';
 	font-size: 24px;
 	font-weight: bold;
 	position: relative;
-	top: 5px;
+	top: 10px;
+	left: 4px;
+}
+
+.search-section {
+	position: relative;
+	width: 550px;
+	height: 40px;
+}
+
+.search-input {
+	width: 500px;
+	height: 40px;
+	border: 1px solid #8E8E93;
+	border-radius: 23px;
+	display: inline-block;
+}
+.search-input .cs-search {
+	width: 451px;
+	height: 38px;
+	color: #9B9B9B;
+	padding-left: 20px;
+	font-size: 16px;
+	border: none;
+	border-radius: 23px;
+}
+.search-input .cs-search::placeholder {
+	color: #8E8E93;
+	font-size: 16px;
+}
+.search-input .search-icon {
+	width: 42px;
+	height: 40px;
+	border-radius: 0 23px 23px 0;
+	cursor: pointer;
+	position: relative;
+	left: -15px;
+	top: -8px;
+}
+.search-input .search-icon img {
+	position: relative;
+	left: 20px;
+	top: 7px;
+}
+
+.filter-button {
+	margin-left: 5px;
+	padding: 11px 10.5px;
+	border: 1px solid #8E8E93;
+	border-radius: 12px;
+	cursor: pointer;
+}
+
+.cs-cart {
+	margin-right: 20px;
+}
+
+.btn-auth {
+	width: 100px;
+	height: 36px;
+	font-size: 14px;
+	color: #9B9B9B;
+	border: 1px solid #9B9B9B;
+	border-radius: 25px;
+	box-sizing: border-box;
+	cursor: pointer;
+	text-align: center;
+	padding-top: 8px;
+	margin-left: 15px;
+}
+
+.cs-btn-login {
+	border: 1px solid var(--main-color);
+	background-color: var(--main-color);
+	color: white;
+}
+
+/* @media (max-width: 768px) {
+	.search-section {
+		padding-left: -80px;
+		width: 450px;
+	}
+	.search-input {
+		width: 360px;
+	}
+	.search-input .cs-search {
+		width: 340px;
+	}
+} */
+
+@media (min-width: 1px) {
+	.cs-btn-group-medium {
+		display: none;
+	}
+}
+
+@media (max-width: 991px) {
+	.search-section {
+		left: 10px;
+		width: 500px;
+	}
+	.search-input {
+		width: 430px;
+	}
+	.search-input .cs-search {
+		width: 381px;
+	}
+}
+
+@media (min-width: 991px) {
+	/* .search-section {
+		
+	} */
+}
+
+@media (min-width: 1200px) {
+	/* .search-section {
+		
+	} */
+	.cs-btn-group-small {
+		display: none;
+	}
+
+	.cs-btn-group-medium {
+		display: block;
+	}
 }
