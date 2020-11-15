@@ -18,10 +18,11 @@
 		<nav class="navbar navbar-expand-sm navbar-light bg-white">
 			<div class="container">
 				<a class="navbar-brand" href="#">
-					<img src="./assets/images/logo.png" width="32" height="44" class="d-inline-block align-top" alt="" loading="lazy">
+					<img src="./assets/images/logo.png" class="d-inline-block align-top" alt="Logo" loading="lazy">
 					<span class="logo-text">Blanja</span>
 				</a>
-				<div class="search-section">
+				<!--  -->
+				<div class="search-section-md">
 					<div class="search-input d-inline-block">
 						<input type="text" class="cs-search" placeholder="Search">
 						<div class="search-icon d-inline-block">
@@ -32,18 +33,35 @@
 						<img src="./assets/icons/filter.png" alt="filter" height="15" width="17">
 					</span>
 				</div>
-				<div class="btn-group">
-					<button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						Action
-					</button>
-					<div class="dropdown-menu">
-						<a class="dropdown-item" href="#">Action</a>
-						<a class="dropdown-item" href="#">Another action</a>
-						<a class="dropdown-item" href="#">Something else here</a>
-						<div class="dropdown-divider"></div>
-						<a class="dropdown-item" href="#">Separated link</a>
+				<!--  -->
+				<div class="cs-btn-group-small">
+					<img class="cs-cart" src="./assets/icons/cart.png" alt="Cart" height="24" width="24">
+					<div class="btn-group cs-btn-auth">
+						<img src="./assets/icons/user.png" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" alt="User" height="18" width="18">
+						<div class="dropdown-menu dropdown-menu-right float-right">
+							<div class="btn-auth d-inline-block cs-btn-login">Login</div>
+							<div class="btn-auth d-inline-block cs-btn-signup">Sign up</div>
+						</div>
+					</div>
+					<!--  -->
+					<div class="btn-group cs-btn-search">
+						<img src="./assets/icons/search.png" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" alt="Search Option">
+						<div class="dropdown-menu dropdown-menu-right mt-3 float-right">
+							<div class="search-section-sm">
+								<div class="search-input d-inline-block">
+									<input type="text" class="cs-search" placeholder="Search">
+									<div class="search-icon d-inline-block">
+										<img src="./assets/icons/search.png" alt="search" height="18" width="18">
+									</div>
+								</div>
+								<span class="filter-button d-inline">
+									<img src="./assets/icons/filter.png" alt="filter">
+								</span>
+							</div>
+						</div>
 					</div>
 				</div>
+				<!--  -->
 				<a class="nav-link cs-btn-group-medium">
 					<img class="cs-cart" src="./assets/icons/cart.png" alt="Cart" height="24" width="24">
 					<div class="btn-auth d-inline-block cs-btn-login">Login</div>
@@ -51,45 +69,9 @@
 				</a>
 			</div>
 		</nav>
-
-		<!-- <div class="cs-navbar">
-			<div class="container">
-				<div class="row">
-					<div class="col-6 col-sm-4 col-md-2">
-						<a href="" class="cs-logo">
-							<img src="./assets/images/logo.png" alt="Logo" width="31" height="44">
-							<span>Blanja</span>
-						</a>
-					</div>
-					<div class="col-2 d-sm-none d-md-none d-lg-none">
-						1
-					</div>
-					<div class="col-2 d-sm-none d-md-none d-lg-none ">
-						2
-					</div>
-					<div class="col-2 d-sm-none d-md-none d-lg-none">
-						3
-					</div>
-					<div class="col-12 col-sm-7 col-md-5">
-						<div class="search-input">
-							<input type="text" class="cs-search" placeholder="Search">
-							<div class="search-icon">
-								<img src="./assets/icons/search.png" alt="search" height="18" width="18">
-							</div>
-						</div>
-					</div>
-					<div class="col-3 col-sm-1 col-md-1">
-						<div class="filter-button">
-							<img src="./assets/icons/filter.png" alt="filter" height="15" width="17">
-						</div>
-					</div>
-				</div>
-			</div>
-		</div> -->
-    
+		
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-		<!-- <script src="https://kit.fontawesome.com/1fe24270bc.js" crossorigin="anonymous"></script> -->
   </body>
 </html>
