@@ -114,6 +114,31 @@ span.logo-text {
 	width: 300px;
 }
 
+.body-content {
+	margin-top: 130px;
+}
+
+.cs-carousel-item {
+	height: 180px;
+	width: 450px;
+	border: 0px;
+	border-radius: 5px;
+	text-align: center;
+	background-position: -13px 0px;
+}
+.side-carousel {
+	height: 180px;
+	width: 69px;
+	border-radius: 5px;
+}
+.cs-carousel-item span {
+	color: #FFFFFF;
+	font-family: 'Metropolis Bold';
+	font-size: 38px;
+	font-weight: bold;
+	line-height: 190px;
+}
+
 @media screen and (min-width: 1px) and (max-width: 767.9px) {
 	.search-section-sm {
 		left: 10px;
@@ -158,6 +183,21 @@ span.logo-text {
 		height: 24px;
 		margin-left: 10px;
 		margin-right: 5px;
+	}
+
+	.cs-carousel-item {
+		height: 180px;
+		width: 100%;
+	}
+	.main-item {
+		background-position: -10px 0px;
+		background-size: cover;
+	}
+	.for-removed-1 {
+		display: none;
+	}
+	.for-removed-2 {
+		display: none;
 	}
 }
 
@@ -282,7 +322,6 @@ span.logo-text {
 		width: 276px;
 	}
 	
-
 	.cs-btn-group-small {
 		width: 100px;
 	}
@@ -300,6 +339,18 @@ span.logo-text {
 		display: inline;
 	}
 	
+	/* .main-item-carousel {
+		padding-left: 80px;
+	} */
+	.for-removed-1 {
+		display: none;
+	}
+	.for-removed-2 {
+		display: block;
+	}
+	.side-right {
+		float: right;
+	}
 }
 
 @media screen and (min-width: 991.99px) and (max-width: 1199px) {
@@ -321,12 +372,13 @@ span.logo-text {
 	.cs-cart {
 		padding-left: -5px;
 	}
+
+	.for-removed-2 {
+		display: none;
+	}
 }
 
 @media (min-width: 1200px) {
-	/* .search-section-md {
-		
-	} */
 	.cs-btn-group-small {
 		display: none;
 	}
@@ -334,4 +386,5 @@ span.logo-text {
 	.cs-btn-group-medium {
 		display: block;
 	}
+
 }
