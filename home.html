@@ -11,7 +11,7 @@
 		<!-- My CSS -->
 		<link rel="stylesheet" href="./assets/css/home.css">
 
-    <title>Hello, world!</title>
+    <title>Blanja - Sebuah aplikasi perbelanjaan online</title>
   </head>
   <body>
 
@@ -39,8 +39,8 @@
 					<div class="btn-group cs-btn-auth">
 						<img src="./assets/icons/user.png" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" alt="User" height="18" width="18">
 						<div class="dropdown-menu dropdown-menu-right float-right">
-							<div class="btn-auth d-inline-block cs-btn-login">Login</div>
-							<div class="btn-auth d-inline-block cs-btn-signup">Sign up</div>
+							<div class="btn-auth d-inline-block cs-btn-login" onclick="redirectTo('./index.html')">Login</div>
+							<div class="btn-auth d-inline-block cs-btn-signup" onclick="redirectTo('./auth/sign_up.html')">Sign up</div>
 						</div>
 					</div>
 					<!--  -->
@@ -64,8 +64,8 @@
 				<!--  -->
 				<a class="nav-link cs-btn-group-medium">
 					<img class="cs-cart" src="./assets/icons/cart.png" alt="Cart" height="24" width="24">
-					<div class="btn-auth d-inline-block cs-btn-login">Login</div>
-					<div class="btn-auth d-inline-block cs-btn-signup">Sign up</div>
+					<div class="btn-auth d-inline-block cs-btn-login" onclick="redirectTo('./index.html')">Login</div>
+					<div class="btn-auth d-inline-block cs-btn-signup" onclick="redirectTo('./auth/sign_up.html')">Sign up</div>
 				</a>
 			</div>
 		</nav>
@@ -639,5 +639,6 @@
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+		<script src="./app.js"></script>
   </body>
 </html>
