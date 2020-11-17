@@ -13,3 +13,10 @@ const activeButton = (button) => {
 const redirectTo = (url) => {
 	window.location.href = url
 }
+
+// const loadContentHome = () => {
+// 	let rowContent = ''
+// 	let columnContent = ''
+
+
+// }
